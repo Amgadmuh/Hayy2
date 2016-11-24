@@ -1,0 +1,762 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 32744 bytes for ChunkPool::allocate
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (allocation.cpp:273), pid=7964, tid=0x0000000000000950
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_101-b13) (build 1.8.0_101-b13)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.101-b13 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000014ce6800):  VMThread [stack: 0x0000000015d70000,0x0000000015e70000] [id=2384]
+
+Stack: [0x0000000015d70000,0x0000000015e70000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+VM_Operation (0x000000003bbfec00): BulkRevokeBias, mode: safepoint, requested by thread 0x000000001d943800
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x000000001d951000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=4304, stack(0x000000003cb00000,0x000000003cc00000)]
+  0x000000001d952000 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 3" [_thread_blocked, id=4180, stack(0x000000003ca00000,0x000000003cb00000)]
+  0x000000001d950800 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 2" [_thread_in_native, id=1620, stack(0x000000003c900000,0x000000003ca00000)]
+  0x000000001d94c800 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=7676, stack(0x000000003c800000,0x000000003c900000)]
+  0x000000001d94c000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9476, stack(0x000000003c600000,0x000000003c700000)]
+  0x000000001d94b000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=7596, stack(0x000000003c500000,0x000000003c600000)]
+  0x000000001d94a800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=6236, stack(0x000000003c400000,0x000000003c500000)]
+  0x000000001d946800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=3776, stack(0x000000003c300000,0x000000003c400000)]
+  0x000000001d943000 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 3" [_thread_in_native, id=9800, stack(0x000000003c200000,0x000000003c300000)]
+  0x000000001d949000 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 2" [_thread_in_native, id=4536, stack(0x000000003c100000,0x000000003c200000)]
+  0x000000001d947800 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=8436, stack(0x000000003c000000,0x000000003c100000)]
+  0x000000001d948000 JavaThread "Thread-454" [_thread_blocked, id=1752, stack(0x000000003be00000,0x000000003bf00000)]
+  0x000000001d949800 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 3" [_thread_in_native, id=9372, stack(0x000000003bd00000,0x000000003be00000)]
+  0x000000001d946000 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 2" [_thread_in_native, id=4328, stack(0x000000003bc00000,0x000000003bd00000)]
+  0x000000001d943800 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=2308, stack(0x000000003bb00000,0x000000003bc00000)]
+  0x000000001d942000 JavaThread "Thread-449" [_thread_blocked, id=7080, stack(0x000000003b900000,0x000000003ba00000)]
+  0x000000001d93f000 JavaThread "Thread-448" [_thread_blocked, id=7404, stack(0x000000003b800000,0x000000003b900000)]
+  0x000000001d93c000 JavaThread "Thread-447" [_thread_blocked, id=5788, stack(0x000000003b700000,0x000000003b800000)]
+  0x000000001d941800 JavaThread "Thread-446" [_thread_blocked, id=10200, stack(0x000000003b600000,0x000000003b700000)]
+  0x000000001d937800 JavaThread "Thread-445" [_thread_blocked, id=8424, stack(0x000000003b500000,0x000000003b600000)]
+  0x000000001d92f800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=5464, stack(0x000000003b400000,0x000000003b500000)]
+  0x000000001d93e800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=5644, stack(0x000000003b300000,0x000000003b400000)]
+  0x000000001d93a800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=928, stack(0x000000003b200000,0x000000003b300000)]
+  0x000000001d93d800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=7064, stack(0x000000003b100000,0x000000003b200000)]
+  0x000000001d940800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=4784, stack(0x000000003b000000,0x000000003b100000)]
+  0x000000001d940000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=4852, stack(0x000000003af00000,0x000000003b000000)]
+  0x000000001d93d000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9280, stack(0x000000003ae00000,0x000000003af00000)]
+  0x000000001d933000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=7120, stack(0x000000003ad00000,0x000000003ae00000)]
+  0x000000001d93a000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=10188, stack(0x000000003ac00000,0x000000003ad00000)]
+  0x000000001d932800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=4800, stack(0x000000003ab00000,0x000000003ac00000)]
+  0x000000001d934800 JavaThread "Thread-431" [_thread_blocked, id=10152, stack(0x000000003aa00000,0x000000003ab00000)]
+  0x000000001d939000 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 3" [_thread_in_native, id=4108, stack(0x000000003a900000,0x000000003aa00000)]
+  0x000000001d934000 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 2" [_thread_in_native, id=9396, stack(0x000000003a800000,0x000000003a900000)]
+  0x000000001d931800 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=7228, stack(0x000000003a700000,0x000000003a800000)]
+  0x000000001d92a000 JavaThread "Thread-430" [_thread_blocked, id=10176, stack(0x000000003a500000,0x000000003a600000)]
+  0x000000001d936000 JavaThread "Thread-429" [_thread_blocked, id=5164, stack(0x000000003a400000,0x000000003a500000)]
+  0x000000001d937000 JavaThread "Thread-428" [_thread_blocked, id=9256, stack(0x000000003a300000,0x000000003a400000)]
+  0x000000001d938800 JavaThread "Thread-427" [_thread_blocked, id=4504, stack(0x000000003a200000,0x000000003a300000)]
+  0x000000001d935800 JavaThread "Thread-426" [_thread_blocked, id=124, stack(0x000000003a100000,0x000000003a200000)]
+  0x000000001d92b000 JavaThread "Thread-425" [_thread_blocked, id=6436, stack(0x000000003a000000,0x000000003a100000)]
+  0x000000001d930000 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 3" [_thread_in_native, id=8016, stack(0x0000000039f00000,0x000000003a000000)]
+  0x000000001d931000 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 2" [_thread_in_native, id=9688, stack(0x0000000039e00000,0x0000000039f00000)]
+  0x000000001d928800 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9824, stack(0x0000000039d00000,0x0000000039e00000)]
+  0x000000001d92e800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=1268, stack(0x0000000039b00000,0x0000000039c00000)]
+  0x000000001d92d000 JavaThread "Thread-419" [_thread_blocked, id=7140, stack(0x0000000039a00000,0x0000000039b00000)]
+  0x000000001d92e000 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 3" [_thread_in_native, id=4848, stack(0x0000000039900000,0x0000000039a00000)]
+  0x000000001d925000 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 2" [_thread_in_native, id=9876, stack(0x0000000039800000,0x0000000039900000)]
+  0x000000001d929800 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9572, stack(0x0000000039700000,0x0000000039800000)]
+  0x000000001d92c800 JavaThread "Thread-414" [_thread_blocked, id=7960, stack(0x0000000039500000,0x0000000039600000)]
+  0x000000001d927000 JavaThread "Thread-405" [_thread_blocked, id=9768, stack(0x0000000039400000,0x0000000039500000)]
+  0x000000001d928000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_in_native, id=5340, stack(0x0000000039300000,0x0000000039400000)]
+  0x000000001d92b800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_in_native, id=3636, stack(0x0000000039200000,0x0000000039300000)]
+  0x000000001d91f800 JavaThread "Thread-409" [_thread_blocked, id=2532, stack(0x0000000039100000,0x0000000039200000)]
+  0x000000001d926800 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 3" [_thread_in_native, id=6256, stack(0x0000000039000000,0x0000000039100000)]
+  0x000000001d920000 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 2" [_thread_in_native, id=4452, stack(0x0000000038f00000,0x0000000039000000)]
+  0x000000001d91e800 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=10052, stack(0x0000000038e00000,0x0000000038f00000)]
+  0x000000001d922800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=5888, stack(0x0000000038c00000,0x0000000038d00000)]
+  0x000000001d921000 JavaThread "Thread-403" [_thread_blocked, id=4308, stack(0x0000000038b00000,0x0000000038c00000)]
+  0x000000001d923000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_in_native, id=7860, stack(0x0000000038a00000,0x0000000038b00000)]
+  0x000000001d925800 JavaThread "Thread-399" [_thread_blocked, id=8160, stack(0x0000000038900000,0x0000000038a00000)]
+  0x000000001d921800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_in_native, id=5648, stack(0x0000000038800000,0x0000000038900000)]
+  0x000000001d91e000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_in_native, id=1200, stack(0x0000000038700000,0x0000000038800000)]
+  0x000000001d91d000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9152, stack(0x0000000038600000,0x0000000038700000)]
+  0x000000001d924000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=6204, stack(0x0000000038500000,0x0000000038600000)]
+  0x000000001d709800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=6232, stack(0x0000000038400000,0x0000000038500000)]
+  0x0000000016ea5800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=7104, stack(0x0000000038300000,0x0000000038400000)]
+  0x0000000016e9b000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=5916, stack(0x0000000038200000,0x0000000038300000)]
+  0x000000001d718000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=4264, stack(0x0000000038100000,0x0000000038200000)]
+  0x000000001d717000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=7192, stack(0x0000000038000000,0x0000000038100000)]
+  0x000000001d716800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=412, stack(0x0000000037f00000,0x0000000038000000)]
+  0x000000001d715800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=3012, stack(0x0000000037e00000,0x0000000037f00000)]
+  0x000000001d715000 JavaThread "Thread-392" [_thread_blocked, id=2336, stack(0x0000000037d00000,0x0000000037e00000)]
+  0x000000001d713800 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 3" [_thread_in_native, id=8240, stack(0x0000000037c00000,0x0000000037d00000)]
+  0x000000001d70e000 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 2" [_thread_in_native, id=2464, stack(0x0000000037b00000,0x0000000037c00000)]
+  0x000000001d714000 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9024, stack(0x0000000037a00000,0x0000000037b00000)]
+  0x000000001d70b000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=5136, stack(0x0000000037800000,0x0000000037900000)]
+  0x000000001d712000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=328, stack(0x0000000037700000,0x0000000037800000)]
+  0x000000001d70f800 JavaThread "Thread-381" [_thread_blocked, id=7112, stack(0x0000000037600000,0x0000000037700000)]
+  0x000000001d700800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9040, stack(0x0000000037500000,0x0000000037600000)]
+  0x000000001d711000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=120, stack(0x0000000037400000,0x0000000037500000)]
+  0x000000001d70f000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=5948, stack(0x0000000037300000,0x0000000037400000)]
+  0x000000001d70c800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=7044, stack(0x0000000037200000,0x0000000037300000)]
+  0x000000001d70b800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=6248, stack(0x0000000037100000,0x0000000037200000)]
+  0x000000001d70d000 JavaThread "Thread-379" [_thread_blocked, id=4736, stack(0x0000000037000000,0x0000000037100000)]
+  0x000000001d6fc800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=6364, stack(0x0000000036f00000,0x0000000037000000)]
+  0x000000001d710800 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 3" [_thread_in_native, id=2764, stack(0x0000000036e00000,0x0000000036f00000)]
+  0x000000001d70a000 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 2" [_thread_in_native, id=8068, stack(0x0000000036d00000,0x0000000036e00000)]
+  0x000000001d702800 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=5216, stack(0x0000000036c00000,0x0000000036d00000)]
+  0x000000001d708000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=7508, stack(0x0000000036a00000,0x0000000036b00000)]
+  0x000000001d708800 JavaThread "Thread-371" [_thread_blocked, id=7392, stack(0x0000000036900000,0x0000000036a00000)]
+  0x000000001d702000 JavaThread "Thread-370" [_thread_blocked, id=6380, stack(0x0000000036800000,0x0000000036900000)]
+  0x000000001d707000 JavaThread "Thread-369" [_thread_blocked, id=4216, stack(0x0000000036700000,0x0000000036800000)]
+  0x000000001d703800 JavaThread "Thread-367" [_thread_blocked, id=3376, stack(0x0000000036600000,0x0000000036700000)]
+  0x000000001d706800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=1320, stack(0x0000000036500000,0x0000000036600000)]
+  0x000000001d705800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=7800, stack(0x0000000036400000,0x0000000036500000)]
+  0x000000001d705000 JavaThread "Thread-356" [_thread_blocked, id=8448, stack(0x0000000036300000,0x0000000036400000)]
+  0x000000001d704000 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 3" [_thread_in_native, id=4804, stack(0x0000000036200000,0x0000000036300000)]
+  0x000000001d6fa800 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 2" [_thread_in_native, id=3464, stack(0x0000000036100000,0x0000000036200000)]
+  0x000000001d701000 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9376, stack(0x0000000036000000,0x0000000036100000)]
+  0x000000001d6fb000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=5572, stack(0x0000000035e00000,0x0000000035f00000)]
+  0x000000001d6f9000 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 3" [_thread_in_native, id=6292, stack(0x0000000035d00000,0x0000000035e00000)]
+  0x000000001d6f9800 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 2" [_thread_in_native, id=10196, stack(0x0000000035c00000,0x0000000035d00000)]
+  0x000000001d6ff800 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=8224, stack(0x0000000035b00000,0x0000000035c00000)]
+  0x000000001d6fd800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9976, stack(0x0000000035a00000,0x0000000035b00000)]
+  0x000000001d6fc000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_in_native, id=2560, stack(0x0000000035900000,0x0000000035a00000)]
+  0x000000001d6ff000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=10028, stack(0x0000000035700000,0x0000000035800000)]
+  0x000000001d6fe000 JavaThread "Thread-348" [_thread_blocked, id=5516, stack(0x0000000035600000,0x0000000035700000)]
+  0x000000001b183000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=7572, stack(0x0000000035500000,0x0000000035600000)]
+  0x000000001dbd6800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=4960, stack(0x0000000035400000,0x0000000035500000)]
+  0x0000000018074800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=6200, stack(0x0000000035300000,0x0000000035400000)]
+  0x0000000016ea2800 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 3" [_thread_in_native, id=3856, stack(0x0000000035200000,0x0000000035300000)]
+  0x0000000016ea5000 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 2" [_thread_in_native, id=3872, stack(0x0000000035100000,0x0000000035200000)]
+  0x0000000016ea2000 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9288, stack(0x0000000035000000,0x0000000035100000)]
+  0x0000000016ea1000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=3852, stack(0x0000000034e00000,0x0000000034f00000)]
+  0x0000000016ea4000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9752, stack(0x0000000034d00000,0x0000000034e00000)]
+  0x0000000016ea3800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=3768, stack(0x0000000034c00000,0x0000000034d00000)]
+  0x0000000016e99800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=7576, stack(0x0000000034b00000,0x0000000034c00000)]
+  0x0000000016ea0800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=2224, stack(0x0000000034a00000,0x0000000034b00000)]
+  0x0000000016e9f800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=5268, stack(0x0000000034900000,0x0000000034a00000)]
+  0x0000000016e9f000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=4636, stack(0x0000000034800000,0x0000000034900000)]
+  0x0000000016e97800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9564, stack(0x0000000034700000,0x0000000034800000)]
+  0x0000000016e9e000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9320, stack(0x0000000034600000,0x0000000034700000)]
+  0x0000000016e9d800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=8956, stack(0x0000000034500000,0x0000000034600000)]
+  0x0000000016e9c800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=8876, stack(0x0000000034400000,0x0000000034500000)]
+  0x0000000016e9c000 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 3" [_thread_in_native, id=9744, stack(0x0000000034300000,0x0000000034400000)]
+  0x0000000016e98000 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 2" [_thread_in_native, id=7004, stack(0x0000000034200000,0x0000000034300000)]
+  0x0000000016e9a800 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=3668, stack(0x0000000034100000,0x0000000034200000)]
+  0x0000000016e99000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=1588, stack(0x0000000033f00000,0x0000000034000000)]
+  0x0000000016e90000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=592, stack(0x0000000033e00000,0x0000000033f00000)]
+  0x0000000016e96800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=2588, stack(0x0000000033d00000,0x0000000033e00000)]
+  0x0000000016e8f000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9500, stack(0x0000000033c00000,0x0000000033d00000)]
+  0x0000000016e96000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=7984, stack(0x0000000033b00000,0x0000000033c00000)]
+  0x0000000016e8e800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9480, stack(0x0000000033a00000,0x0000000033b00000)]
+  0x0000000016e95000 JavaThread "Thread-315" [_thread_blocked, id=5364, stack(0x0000000033900000,0x0000000033a00000)]
+  0x0000000016e94800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=7452, stack(0x0000000033800000,0x0000000033900000)]
+  0x0000000016e93800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9756, stack(0x0000000033700000,0x0000000033800000)]
+  0x0000000016e92000 JavaThread "Thread-319" [_thread_blocked, id=1872, stack(0x0000000033600000,0x0000000033700000)]
+  0x0000000016e91800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=6416, stack(0x0000000033500000,0x0000000033600000)]
+  0x0000000016e93000 JavaThread "Thread-317" [_thread_blocked, id=9484, stack(0x0000000033400000,0x0000000033500000)]
+  0x0000000016e90800 JavaThread "Thread-316" [_thread_blocked, id=4604, stack(0x0000000033300000,0x0000000033400000)]
+  0x0000000016e88800 JavaThread "Thread-314" [_thread_blocked, id=2316, stack(0x0000000033200000,0x0000000033300000)]
+  0x0000000016e87000 JavaThread "Thread-313" [_thread_blocked, id=6596, stack(0x0000000033100000,0x0000000033200000)]
+  0x0000000016e8a800 JavaThread "Thread-312" [_thread_blocked, id=8928, stack(0x0000000033000000,0x0000000033100000)]
+  0x0000000016e8d800 JavaThread "Thread-311" [_thread_blocked, id=784, stack(0x0000000032f00000,0x0000000033000000)]
+  0x0000000016e8a000 JavaThread "Thread-310" [_thread_blocked, id=8640, stack(0x0000000032e00000,0x0000000032f00000)]
+  0x0000000016e8c000 JavaThread "Thread-309" [_thread_blocked, id=10124, stack(0x0000000032d00000,0x0000000032e00000)]
+  0x0000000016e8d000 JavaThread "Thread-308" [_thread_blocked, id=1060, stack(0x0000000032c00000,0x0000000032d00000)]
+  0x0000000016e8b800 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 3" [_thread_in_native, id=7344, stack(0x0000000032b00000,0x0000000032c00000)]
+  0x0000000016e87800 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 2" [_thread_in_native, id=7012, stack(0x0000000032a00000,0x0000000032b00000)]
+  0x0000000016e89000 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9552, stack(0x0000000032900000,0x0000000032a00000)]
+  0x000000001dbe3800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=5240, stack(0x0000000032700000,0x0000000032800000)]
+  0x000000001dbe3000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=1564, stack(0x0000000032600000,0x0000000032700000)]
+  0x000000001dbdb000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=5380, stack(0x0000000032500000,0x0000000032600000)]
+  0x000000001dbe2000 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 3" [_thread_in_native, id=2108, stack(0x0000000032400000,0x0000000032500000)]
+  0x000000001dbda800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9956, stack(0x0000000032300000,0x0000000032400000)]
+  0x000000001dbe1000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=1348, stack(0x0000000032200000,0x0000000032300000)]
+  0x000000001dbd9800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=984, stack(0x0000000032100000,0x0000000032200000)]
+  0x000000001dbe0800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=3164, stack(0x0000000032000000,0x0000000032100000)]
+  0x000000001dbd9000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=6396, stack(0x0000000031f00000,0x0000000032000000)]
+  0x000000001dbdf800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=7692, stack(0x0000000031e00000,0x0000000031f00000)]
+  0x000000001dbde000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_in_native, id=3368, stack(0x0000000031d00000,0x0000000031e00000)]
+  0x000000001dbdf000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=7528, stack(0x0000000031c00000,0x0000000031d00000)]
+  0x000000001dbdd800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9680, stack(0x0000000031b00000,0x0000000031c00000)]
+  0x000000001dbdc800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=4796, stack(0x0000000031a00000,0x0000000031b00000)]
+  0x000000001dbdc000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=5780, stack(0x0000000031900000,0x0000000031a00000)]
+  0x000000001dbd1800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9844, stack(0x0000000031800000,0x0000000031900000)]
+  0x000000001dbd8000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=6340, stack(0x0000000031700000,0x0000000031800000)]
+  0x000000001dbd6000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=7588, stack(0x0000000031600000,0x0000000031700000)]
+  0x000000001dbd4800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=8048, stack(0x0000000031500000,0x0000000031600000)]
+  0x000000001dbd7800 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 2" [_thread_in_native, id=1328, stack(0x0000000031400000,0x0000000031500000)]
+  0x000000001dbd5000 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=3236, stack(0x0000000031300000,0x0000000031400000)]
+  0x000000001dbd3800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=2744, stack(0x0000000031100000,0x0000000031200000)]
+  0x000000001dbd3000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=5672, stack(0x0000000031000000,0x0000000031100000)]
+  0x000000001dbca000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9692, stack(0x0000000030f00000,0x0000000031000000)]
+  0x000000001dbd0800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=980, stack(0x0000000030e00000,0x0000000030f00000)]
+  0x000000001dbcb800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=848, stack(0x0000000030d00000,0x0000000030e00000)]
+  0x000000001dbd2000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=10012, stack(0x0000000030c00000,0x0000000030d00000)]
+  0x000000001dbc9000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=4336, stack(0x0000000030b00000,0x0000000030c00000)]
+  0x000000001dbce800 JavaThread "Thread-274" [_thread_blocked, id=10060, stack(0x0000000030a00000,0x0000000030b00000)]
+  0x000000001dbcd800 JavaThread "Thread-273" [_thread_blocked, id=7784, stack(0x0000000030900000,0x0000000030a00000)]
+  0x000000001dbd0000 JavaThread "Thread-272" [_thread_blocked, id=448, stack(0x0000000030800000,0x0000000030900000)]
+  0x000000001dbcd000 JavaThread "Thread-271" [_thread_blocked, id=9512, stack(0x0000000030700000,0x0000000030800000)]
+  0x000000001dbcf000 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 3" [_thread_in_native, id=1116, stack(0x0000000030600000,0x0000000030700000)]
+  0x000000001dbc8800 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 2" [_thread_in_native, id=232, stack(0x0000000030500000,0x0000000030600000)]
+  0x000000001dbc5800 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=7480, stack(0x0000000030400000,0x0000000030500000)]
+  0x000000001dbc7800 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 3" [_thread_in_native, id=10228, stack(0x0000000030200000,0x0000000030300000)]
+  0x000000001dbcc000 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 2" [_thread_in_native, id=9704, stack(0x0000000030100000,0x0000000030200000)]
+  0x000000001dbc7000 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9348, stack(0x0000000030000000,0x0000000030100000)]
+  0x000000001dbca800 JavaThread "Thread-262" [_thread_blocked, id=10232, stack(0x000000002fe00000,0x000000002ff00000)]
+  0x000000001dbc4800 JavaThread "Thread-261" [_thread_blocked, id=9532, stack(0x000000002fd00000,0x000000002fe00000)]
+  0x000000001dbc6000 JavaThread "Thread-260" [_thread_blocked, id=7524, stack(0x000000002fc00000,0x000000002fd00000)]
+  0x000000001a3db000 JavaThread "Thread-259" [_thread_blocked, id=9356, stack(0x000000002fb00000,0x000000002fc00000)]
+  0x000000001a3da000 JavaThread "Thread-258" [_thread_blocked, id=9864, stack(0x000000002fa00000,0x000000002fb00000)]
+  0x000000001a3d2800 JavaThread "Thread-257" [_thread_blocked, id=5756, stack(0x000000002f900000,0x000000002fa00000)]
+  0x000000001a3d9800 JavaThread "Thread-256" [_thread_blocked, id=7748, stack(0x000000002f800000,0x000000002f900000)]
+  0x000000001a3d8800 JavaThread "Thread-255" [_thread_blocked, id=608, stack(0x000000002f700000,0x000000002f800000)]
+  0x000000001a3d1000 JavaThread "Thread-254" [_thread_blocked, id=2460, stack(0x000000002f600000,0x000000002f700000)]
+  0x000000001a3d2000 JavaThread "Thread-253" [_thread_blocked, id=9536, stack(0x000000002f500000,0x000000002f600000)]
+  0x000000001a3d6800 JavaThread "Thread-252" [_thread_blocked, id=6900, stack(0x000000002f400000,0x000000002f500000)]
+  0x000000001a3d3800 JavaThread "Thread-248" [_thread_blocked, id=2012, stack(0x000000002f300000,0x000000002f400000)]
+  0x000000001a3d8000 JavaThread "Thread-251" [_thread_blocked, id=668, stack(0x000000002f200000,0x000000002f300000)]
+  0x000000001a3d7000 JavaThread "Thread-250" [_thread_blocked, id=2632, stack(0x000000002f100000,0x000000002f200000)]
+  0x000000001a3d0800 JavaThread "Thread-249" [_thread_blocked, id=9592, stack(0x000000002f000000,0x000000002f100000)]
+  0x000000001a3d5000 JavaThread "Thread-247" [_thread_blocked, id=5284, stack(0x000000002ef00000,0x000000002f000000)]
+  0x000000001a3d5800 JavaThread "Thread-246" [_thread_blocked, id=9812, stack(0x000000002ee00000,0x000000002ef00000)]
+  0x000000001a3d4000 JavaThread "Thread-245" [_thread_blocked, id=1132, stack(0x000000002ed00000,0x000000002ee00000)]
+  0x000000001a3c9000 JavaThread "Thread-244" [_thread_blocked, id=8336, stack(0x000000002ec00000,0x000000002ed00000)]
+  0x000000001a3cf800 JavaThread "Thread-243" [_thread_blocked, id=7324, stack(0x000000002eb00000,0x000000002ec00000)]
+  0x000000001a3c8000 JavaThread "Thread-242" [_thread_blocked, id=2188, stack(0x000000002ea00000,0x000000002eb00000)]
+  0x000000001a3cf000 JavaThread "Thread-241" [_thread_blocked, id=2968, stack(0x000000002e900000,0x000000002ea00000)]
+  0x000000001a3cc800 JavaThread "Thread-240" [_thread_blocked, id=10104, stack(0x000000002e800000,0x000000002e900000)]
+  0x000000001a3cd800 JavaThread "Thread-239" [_thread_blocked, id=7428, stack(0x000000002e700000,0x000000002e800000)]
+  0x000000001a3c9800 JavaThread "Thread-238" [_thread_blocked, id=7696, stack(0x000000002e600000,0x000000002e700000)]
+  0x000000001a3cb000 JavaThread "Thread-237" [_thread_blocked, id=9808, stack(0x000000002e230000,0x000000002e330000)]
+  0x000000001a3cc000 JavaThread "Thread-236" [_thread_blocked, id=7156, stack(0x000000002e130000,0x000000002e230000)]
+  0x000000001a3ca800 JavaThread "Thread-235" [_thread_blocked, id=7472, stack(0x000000002e030000,0x000000002e130000)]
+  0x000000001a3ce000 JavaThread "Thread-234" [_thread_blocked, id=9852, stack(0x000000002df30000,0x000000002e030000)]
+  0x000000001a3c0800 JavaThread "Thread-233" [_thread_blocked, id=9772, stack(0x000000002de30000,0x000000002df30000)]
+  0x000000001a3c1800 JavaThread "Thread-232" [_thread_blocked, id=2332, stack(0x000000002dd30000,0x000000002de30000)]
+  0x000000001a3c7800 JavaThread "Thread-231" [_thread_blocked, id=9412, stack(0x000000002dc30000,0x000000002dd30000)]
+  0x000000001a3c6800 JavaThread "Thread-230" [_thread_blocked, id=1680, stack(0x000000002db30000,0x000000002dc30000)]
+  0x000000001a3c6000 JavaThread "Thread-229" [_thread_blocked, id=8104, stack(0x000000002da30000,0x000000002db30000)]
+  0x000000001a3c0000 JavaThread "Thread-228" [_thread_blocked, id=8560, stack(0x000000002d930000,0x000000002da30000)]
+  0x000000001a3be800 JavaThread "Thread-227" [_thread_blocked, id=4540, stack(0x000000002d830000,0x000000002d930000)]
+  0x000000001a3c4800 JavaThread "Thread-226" [_thread_blocked, id=440, stack(0x000000002d730000,0x000000002d830000)]
+  0x000000001a3c5000 JavaThread "Thread-224" [_thread_blocked, id=9108, stack(0x000000002d630000,0x000000002d730000)]
+  0x000000001a3c3000 JavaThread "Thread-225" [_thread_blocked, id=8944, stack(0x000000002d530000,0x000000002d630000)]
+  0x000000001a3c3800 JavaThread "Thread-223" [_thread_blocked, id=7952, stack(0x000000002d430000,0x000000002d530000)]
+  0x000000001a3bd000 JavaThread "Thread-222" [_thread_blocked, id=8696, stack(0x000000002d330000,0x000000002d430000)]
+  0x000000001a3bf000 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 3" [_thread_in_native, id=5192, stack(0x000000002d230000,0x000000002d330000)]
+  0x000000001a3c2000 JavaThread "Thread-217" [_thread_blocked, id=6496, stack(0x000000002d130000,0x000000002d230000)]
+  0x000000001a3bd800 JavaThread "Thread-221" [_thread_blocked, id=9424, stack(0x000000002d030000,0x000000002d130000)]
+  0x000000001a3bc000 JavaThread "Thread-219" [_thread_blocked, id=9548, stack(0x000000002cf30000,0x000000002d030000)]
+  0x000000001b184800 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 2" [_thread_in_native, id=8032, stack(0x000000002ce30000,0x000000002cf30000)]
+  0x000000001b183800 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=7312, stack(0x000000002cd30000,0x000000002ce30000)]
+  0x000000001b182000 JavaThread "Thread-214" [_thread_blocked, id=7092, stack(0x000000002cb30000,0x000000002cc30000)]
+  0x000000001b181800 JavaThread "Thread-213" [_thread_blocked, id=10080, stack(0x000000002ca30000,0x000000002cb30000)]
+  0x000000001b188000 JavaThread "Thread-212" [_thread_blocked, id=4980, stack(0x000000002c930000,0x000000002ca30000)]
+  0x000000001b180800 JavaThread "Thread-211" [_thread_blocked, id=3632, stack(0x000000002c830000,0x000000002c930000)]
+  0x000000001b187800 JavaThread "Thread-210" [_thread_blocked, id=4888, stack(0x000000002c730000,0x000000002c830000)]
+  0x000000001b180000 JavaThread "Thread-209" [_thread_blocked, id=8096, stack(0x000000002c630000,0x000000002c730000)]
+  0x000000001b186800 JavaThread "Thread-208" [_thread_blocked, id=7584, stack(0x000000002c530000,0x000000002c630000)]
+  0x000000001b185000 JavaThread "Thread-207" [_thread_blocked, id=6420, stack(0x000000002c430000,0x000000002c530000)]
+  0x000000001b17f000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=8712, stack(0x000000002c330000,0x000000002c430000)]
+  0x000000001b186000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=2780, stack(0x000000002c230000,0x000000002c330000)]
+  0x000000001b177800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=1788, stack(0x000000002c130000,0x000000002c230000)]
+  0x000000001b17e800 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 3" [_thread_in_native, id=9628, stack(0x000000002c030000,0x000000002c130000)]
+  0x000000001b177000 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe' Thread 2" [_thread_in_native, id=7532, stack(0x000000002bf30000,0x000000002c030000)]
+  0x000000001b17d800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9616, stack(0x000000002be30000,0x000000002bf30000)]
+  0x000000001b176000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=2056, stack(0x000000002bd30000,0x000000002be30000)]
+  0x000000001b17d000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9076, stack(0x000000002bc30000,0x000000002bd30000)]
+  0x000000001b175800 JavaThread "Forward streams with process: command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=212, stack(0x000000002bb30000,0x000000002bc30000)]
+  0x000000001b17c000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=4208, stack(0x000000002ba30000,0x000000002bb30000)]
+  0x000000001b17a000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=820, stack(0x000000002b930000,0x000000002ba30000)]
+  0x000000001b174800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=3296, stack(0x000000002b830000,0x000000002b930000)]
+  0x000000001b17b800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9380, stack(0x000000002b730000,0x000000002b830000)]
+  0x000000001b179000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=10040, stack(0x000000002b630000,0x000000002b730000)]
+  0x000000001b178800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9684, stack(0x000000002b530000,0x000000002b630000)]
+  0x000000001b17a800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=5976, stack(0x000000002b430000,0x000000002b530000)]
+  0x000000001b16d000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=3928, stack(0x000000002b330000,0x000000002b430000)]
+  0x000000001b174000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=5996, stack(0x000000002b230000,0x000000002b330000)]
+  0x000000001b16c800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=1224, stack(0x000000002b130000,0x000000002b230000)]
+  0x000000001b173000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=10164, stack(0x000000002b030000,0x000000002b130000)]
+  0x000000001b16b800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=4940, stack(0x000000002af30000,0x000000002b030000)]
+  0x000000001b172800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=5424, stack(0x000000002ae30000,0x000000002af30000)]
+  0x000000001b171800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9736, stack(0x000000002ad30000,0x000000002ae30000)]
+  0x000000001b16a000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=8792, stack(0x000000002ac30000,0x000000002ad30000)]
+  0x000000001b16e800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=4120, stack(0x000000002ab30000,0x000000002ac30000)]
+  0x000000001b16e000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=5900, stack(0x000000002aa30000,0x000000002ab30000)]
+  0x000000001b171000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=2516, stack(0x000000002a930000,0x000000002aa30000)]
+  0x000000001b169800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=3476, stack(0x000000002a830000,0x000000002a930000)]
+  0x000000001b170000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=6320, stack(0x000000002a730000,0x000000002a830000)]
+  0x000000001b16f800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_in_native, id=5460, stack(0x000000002a630000,0x000000002a730000)]
+  0x000000001b16b000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=8996, stack(0x000000002a530000,0x000000002a630000)]
+  0x000000001c9b6000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=5700, stack(0x000000002a430000,0x000000002a530000)]
+  0x000000001c9b5000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9336, stack(0x000000002a330000,0x000000002a430000)]
+  0x000000001c9b3800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=10020, stack(0x000000002a230000,0x000000002a330000)]
+  0x000000001c9b0800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=5480, stack(0x000000002a130000,0x000000002a230000)]
+  0x000000001c9b3000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=7264, stack(0x000000002a030000,0x000000002a130000)]
+  0x000000001c9b6800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=2156, stack(0x0000000029f30000,0x000000002a030000)]
+  0x000000001c9b4800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=8216, stack(0x0000000029e30000,0x0000000029f30000)]
+  0x000000001c9ab800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9556, stack(0x0000000029d30000,0x0000000029e30000)]
+  0x000000001c9b2000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9196, stack(0x0000000029c30000,0x0000000029d30000)]
+  0x000000001c9b1800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9160, stack(0x0000000029b30000,0x0000000029c30000)]
+  0x000000001c9a9000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=7600, stack(0x0000000029a30000,0x0000000029b30000)]
+  0x000000001c9b0000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=1656, stack(0x0000000029930000,0x0000000029a30000)]
+  0x000000001c9a8800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=4952, stack(0x0000000029830000,0x0000000029930000)]
+  0x000000001c9af000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=5740, stack(0x0000000029730000,0x0000000029830000)]
+  0x000000001c9a7800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9036, stack(0x0000000029630000,0x0000000029730000)]
+  0x000000001c9aa800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=640, stack(0x0000000029530000,0x0000000029630000)]
+  0x000000001c9ae800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=4280, stack(0x0000000029430000,0x0000000029530000)]
+  0x000000001c9ad800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=540, stack(0x0000000029330000,0x0000000029430000)]
+  0x000000001c9ad000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=7988, stack(0x0000000029230000,0x0000000029330000)]
+  0x000000001c9ac000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=8932, stack(0x0000000029130000,0x0000000029230000)]
+  0x000000001c9aa000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=6656, stack(0x0000000029030000,0x0000000029130000)]
+  0x0000000017bb2800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9888, stack(0x0000000028f30000,0x0000000029030000)]
+  0x0000000017bb1800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=6548, stack(0x0000000028e30000,0x0000000028f30000)]
+  0x0000000017bb1000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=5620, stack(0x0000000028d30000,0x0000000028e30000)]
+  0x0000000017bb6000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=1396, stack(0x0000000028c30000,0x0000000028d30000)]
+  0x0000000017bb5800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=10184, stack(0x0000000028b30000,0x0000000028c30000)]
+  0x0000000017bb4800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=10056, stack(0x0000000028a30000,0x0000000028b30000)]
+  0x0000000017bb4000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=276, stack(0x0000000028930000,0x0000000028a30000)]
+  0x0000000017bb3000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=4596, stack(0x0000000028830000,0x0000000028930000)]
+  0x0000000017ba9800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=960, stack(0x0000000028730000,0x0000000028830000)]
+  0x0000000017bb0000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=2268, stack(0x0000000028630000,0x0000000028730000)]
+  0x0000000017ba8800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9980, stack(0x0000000028530000,0x0000000028630000)]
+  0x0000000017baf800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=7252, stack(0x0000000028430000,0x0000000028530000)]
+  0x0000000017ba8000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=10116, stack(0x0000000028330000,0x0000000028430000)]
+  0x0000000017bae800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=10048, stack(0x0000000028230000,0x0000000028330000)]
+  0x0000000017ba7000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=8396, stack(0x0000000028130000,0x0000000028230000)]
+  0x0000000017bae000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=7280, stack(0x0000000028030000,0x0000000028130000)]
+  0x0000000017bad000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=7888, stack(0x0000000027f30000,0x0000000028030000)]
+  0x0000000017bac800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9144, stack(0x0000000027e30000,0x0000000027f30000)]
+  0x0000000017bab000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=1580, stack(0x0000000027d30000,0x0000000027e30000)]
+  0x0000000017baa000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=6664, stack(0x0000000027c30000,0x0000000027d30000)]
+  0x0000000017bab800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9584, stack(0x0000000027b30000,0x0000000027c30000)]
+  0x0000000018072800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9132, stack(0x0000000027a30000,0x0000000027b30000)]
+  0x0000000018079000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9044, stack(0x0000000027930000,0x0000000027a30000)]
+  0x0000000018078800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=4744, stack(0x0000000027730000,0x0000000027830000)]
+  0x0000000018073000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=8848, stack(0x0000000027530000,0x0000000027630000)]
+  0x0000000018077000 JavaThread "Thread-128" [_thread_blocked, id=3148, stack(0x0000000027430000,0x0000000027530000)]
+  0x0000000018075800 JavaThread "Thread-127" [_thread_blocked, id=4344, stack(0x0000000027330000,0x0000000027430000)]
+  0x0000000018077800 JavaThread "Thread-126" [_thread_blocked, id=4372, stack(0x0000000027230000,0x0000000027330000)]
+  0x0000000018076000 JavaThread "Thread-125" [_thread_blocked, id=1884, stack(0x0000000027130000,0x0000000027230000)]
+  0x0000000018074000 JavaThread "Thread-124" [_thread_blocked, id=10140, stack(0x0000000027030000,0x0000000027130000)]
+  0x0000000018071800 JavaThread "Thread-123" [_thread_blocked, id=5204, stack(0x0000000026f30000,0x0000000027030000)]
+  0x000000001806a000 JavaThread "Thread-122" [_thread_blocked, id=9600, stack(0x0000000026e30000,0x0000000026f30000)]
+  0x000000001806b800 JavaThread "Thread-118" [_thread_blocked, id=8008, stack(0x0000000026d30000,0x0000000026e30000)]
+  0x0000000018070000 JavaThread "Thread-121" [_thread_blocked, id=4860, stack(0x0000000026c30000,0x0000000026d30000)]
+  0x000000001806b000 JavaThread "Thread-120" [_thread_blocked, id=5676, stack(0x0000000026b30000,0x0000000026c30000)]
+  0x000000001806e800 JavaThread "Thread-119" [_thread_blocked, id=6688, stack(0x0000000026a30000,0x0000000026b30000)]
+  0x000000001806f800 JavaThread "Thread-117" [_thread_blocked, id=7884, stack(0x0000000026930000,0x0000000026a30000)]
+  0x0000000018071000 JavaThread "Thread-116" [_thread_blocked, id=1912, stack(0x0000000026830000,0x0000000026930000)]
+  0x000000001806e000 JavaThread "Thread-115" [_thread_blocked, id=3880, stack(0x0000000026730000,0x0000000026830000)]
+  0x000000001806c800 JavaThread "Thread-114" [_thread_blocked, id=9804, stack(0x0000000026630000,0x0000000026730000)]
+  0x000000001806d000 JavaThread "Thread-113" [_thread_blocked, id=9716, stack(0x0000000026530000,0x0000000026630000)]
+  0x000000001978f800 JavaThread "Thread-112" [_thread_blocked, id=6840, stack(0x0000000026430000,0x0000000026530000)]
+  0x000000001978e800 JavaThread "Thread-111" [_thread_blocked, id=4428, stack(0x0000000026330000,0x0000000026430000)]
+  0x000000001978e000 JavaThread "Thread-110" [_thread_blocked, id=6928, stack(0x0000000026230000,0x0000000026330000)]
+  0x000000001978d000 JavaThread "Thread-109" [_thread_blocked, id=5568, stack(0x0000000026130000,0x0000000026230000)]
+  0x000000001978c800 JavaThread "Thread-108" [_thread_blocked, id=9792, stack(0x0000000026030000,0x0000000026130000)]
+  0x000000001978b800 JavaThread "Thread-106" [_thread_blocked, id=8632, stack(0x0000000025f30000,0x0000000026030000)]
+  0x0000000019784000 JavaThread "Thread-107" [_thread_blocked, id=3820, stack(0x0000000025e30000,0x0000000025f30000)]
+  0x000000001978b000 JavaThread "Thread-105" [_thread_blocked, id=704, stack(0x0000000025d30000,0x0000000025e30000)]
+  0x0000000019783800 JavaThread "Thread-104" [_thread_blocked, id=972, stack(0x0000000025c30000,0x0000000025d30000)]
+  0x000000001978a000 JavaThread "Thread-103" [_thread_blocked, id=1364, stack(0x0000000025b30000,0x0000000025c30000)]
+  0x0000000019782800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=9200, stack(0x0000000025a30000,0x0000000025b30000)]
+  0x0000000019789800 JavaThread "Thread-101" [_thread_blocked, id=1960, stack(0x0000000025930000,0x0000000025a30000)]
+  0x0000000019785800 JavaThread "Thread-100" [_thread_blocked, id=8300, stack(0x0000000025830000,0x0000000025930000)]
+  0x0000000019785000 JavaThread "Thread-99" [_thread_blocked, id=5808, stack(0x0000000025730000,0x0000000025830000)]
+  0x0000000019782000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=5044, stack(0x0000000025630000,0x0000000025730000)]
+  0x0000000019788800 JavaThread "Thread-97" [_thread_blocked, id=3956, stack(0x0000000025530000,0x0000000025630000)]
+  0x0000000019788000 JavaThread "Thread-96" [_thread_blocked, id=9660, stack(0x0000000025430000,0x0000000025530000)]
+  0x0000000019780800 JavaThread "Thread-95" [_thread_blocked, id=8488, stack(0x0000000025330000,0x0000000025430000)]
+  0x0000000019781000 JavaThread "Thread-94" [_thread_blocked, id=5940, stack(0x0000000025230000,0x0000000025330000)]
+  0x0000000019787000 JavaThread "Thread-93" [_thread_blocked, id=9080, stack(0x0000000025130000,0x0000000025230000)]
+  0x0000000019786800 JavaThread "Thread-92" [_thread_blocked, id=2068, stack(0x0000000025030000,0x0000000025130000)]
+  0x000000001bf83800 JavaThread "Thread-91" [_thread_blocked, id=9140, stack(0x0000000024f30000,0x0000000025030000)]
+  0x000000001bf82800 JavaThread "Thread-90" [_thread_blocked, id=436, stack(0x0000000024e30000,0x0000000024f30000)]
+  0x000000001bf81000 JavaThread "Thread-89" [_thread_blocked, id=9836, stack(0x0000000024d30000,0x0000000024e30000)]
+  0x000000001bf88000 JavaThread "Thread-88" [_thread_blocked, id=9728, stack(0x0000000024c30000,0x0000000024d30000)]
+  0x000000001bf86800 JavaThread "Thread-87" [_thread_blocked, id=8452, stack(0x0000000024b30000,0x0000000024c30000)]
+  0x000000001bf85800 JavaThread "Thread-86" [_thread_blocked, id=1924, stack(0x0000000024a30000,0x0000000024b30000)]
+  0x000000001bf84000 JavaThread "Thread-85" [_thread_blocked, id=3000, stack(0x0000000024930000,0x0000000024a30000)]
+  0x000000001bf87800 JavaThread "Thread-84" [_thread_blocked, id=88, stack(0x0000000024830000,0x0000000024930000)]
+  0x000000001bf80800 JavaThread "Thread-83" [_thread_blocked, id=676, stack(0x0000000024730000,0x0000000024830000)]
+  0x000000001bf85000 JavaThread "Thread-82" [_thread_blocked, id=5504, stack(0x0000000024630000,0x0000000024730000)]
+  0x000000001bf82000 JavaThread "Thread-81" [_thread_blocked, id=9788, stack(0x0000000024530000,0x0000000024630000)]
+  0x000000001bf79000 JavaThread "Thread-80" [_thread_blocked, id=1964, stack(0x0000000024430000,0x0000000024530000)]
+  0x000000001bf7e000 JavaThread "Thread-79" [_thread_blocked, id=10160, stack(0x0000000024330000,0x0000000024430000)]
+  0x000000001bf7c800 JavaThread "Thread-78" [_thread_blocked, id=1728, stack(0x0000000024230000,0x0000000024330000)]
+  0x000000001bf7d800 JavaThread "Thread-77" [_thread_blocked, id=9400, stack(0x0000000024130000,0x0000000024230000)]
+  0x000000001bf7b000 JavaThread "Thread-76" [_thread_blocked, id=3288, stack(0x0000000024030000,0x0000000024130000)]
+  0x000000001bf7f800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=1844, stack(0x0000000023f30000,0x0000000024030000)]
+  0x000000001bf7f000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=1216, stack(0x0000000023e30000,0x0000000023f30000)]
+  0x000000001bf79800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=6992, stack(0x0000000023d30000,0x0000000023e30000)]
+  0x000000001bf7c000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=7768, stack(0x0000000023c30000,0x0000000023d30000)]
+  0x000000001bf7a800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=4400, stack(0x0000000023b30000,0x0000000023c30000)]
+  0x00000000197dd800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=6012, stack(0x0000000023a30000,0x0000000023b30000)]
+  0x00000000197dd000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_blocked, id=8568, stack(0x0000000023930000,0x0000000023a30000)]
+  0x00000000197dc000 JavaThread "Thread-68" [_thread_blocked, id=1048, stack(0x0000000023830000,0x0000000023930000)]
+  0x00000000197db800 JavaThread "Thread-67" [_thread_blocked, id=9608, stack(0x0000000023730000,0x0000000023830000)]
+  0x00000000197df000 JavaThread "Thread-66" [_thread_blocked, id=508, stack(0x0000000023630000,0x0000000023730000)]
+  0x00000000197da800 JavaThread "Thread-65" [_thread_blocked, id=8440, stack(0x0000000023530000,0x0000000023630000)]
+  0x00000000197de800 JavaThread "Thread-64" [_thread_blocked, id=7216, stack(0x0000000023430000,0x0000000023530000)]
+  0x00000000197da000 JavaThread "Thread-63" [_thread_blocked, id=5436, stack(0x0000000023330000,0x0000000023430000)]
+  0x00000000197d9000 JavaThread "Thread-62" [_thread_blocked, id=3452, stack(0x0000000023230000,0x0000000023330000)]
+  0x00000000197d1800 JavaThread "Thread-61" [_thread_blocked, id=10100, stack(0x0000000023130000,0x0000000023230000)]
+  0x00000000197d8800 JavaThread "Thread-60" [_thread_blocked, id=8636, stack(0x0000000023030000,0x0000000023130000)]
+  0x00000000197d1000 JavaThread "Thread-59" [_thread_blocked, id=8772, stack(0x0000000022f30000,0x0000000023030000)]
+  0x00000000197d7800 JavaThread "Thread-58" [_thread_blocked, id=6976, stack(0x0000000022e30000,0x0000000022f30000)]
+  0x00000000197d6000 JavaThread "Thread-57" [_thread_blocked, id=3900, stack(0x0000000022d30000,0x0000000022e30000)]
+  0x00000000197d4800 JavaThread "Thread-56" [_thread_blocked, id=7996, stack(0x0000000022c30000,0x0000000022d30000)]
+  0x00000000197d4000 JavaThread "Thread-55" [_thread_blocked, id=10112, stack(0x0000000022b30000,0x0000000022c30000)]
+  0x00000000197d5800 JavaThread "Thread-54" [_thread_blocked, id=3332, stack(0x0000000022a30000,0x0000000022b30000)]
+  0x00000000197d3000 JavaThread "Thread-53" [_thread_blocked, id=3032, stack(0x0000000022930000,0x0000000022a30000)]
+  0x00000000197d2800 JavaThread "Thread-52" [_thread_blocked, id=7580, stack(0x0000000022830000,0x0000000022930000)]
+  0x00000000197d7000 JavaThread "Thread-51" [_thread_blocked, id=5104, stack(0x0000000022730000,0x0000000022830000)]
+  0x00000000197d0000 JavaThread "Thread-50" [_thread_blocked, id=5800, stack(0x0000000022630000,0x0000000022730000)]
+  0x0000000019d7b000 JavaThread "Thread-49" [_thread_blocked, id=9272, stack(0x0000000022530000,0x0000000022630000)]
+  0x0000000019d7a000 JavaThread "Thread-48" [_thread_blocked, id=6432, stack(0x0000000022430000,0x0000000022530000)]
+  0x0000000019d79800 JavaThread "Thread-47" [_thread_blocked, id=7948, stack(0x0000000022330000,0x0000000022430000)]
+  0x0000000019d78800 JavaThread "Thread-46" [_thread_blocked, id=7160, stack(0x0000000022230000,0x0000000022330000)]
+  0x0000000019d78000 JavaThread "Thread-45" [_thread_blocked, id=7520, stack(0x0000000022130000,0x0000000022230000)]
+  0x0000000019d77000 JavaThread "Thread-44" [_thread_blocked, id=7536, stack(0x0000000022030000,0x0000000022130000)]
+  0x0000000019d76800 JavaThread "Thread-43" [_thread_blocked, id=8804, stack(0x0000000021f30000,0x0000000022030000)]
+  0x0000000019d6f000 JavaThread "Thread-42" [_thread_blocked, id=9740, stack(0x0000000021e30000,0x0000000021f30000)]
+  0x0000000019d75800 JavaThread "Thread-41" [_thread_blocked, id=7568, stack(0x0000000021d30000,0x0000000021e30000)]
+  0x0000000019d74000 JavaThread "Thread-40" [_thread_blocked, id=6948, stack(0x0000000021c30000,0x0000000021d30000)]
+  0x0000000019d70800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_in_native, id=10016, stack(0x0000000021b30000,0x0000000021c30000)]
+  0x0000000019d6e000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_in_native, id=6516, stack(0x0000000021a30000,0x0000000021b30000)]
+  0x0000000019d72800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_in_native, id=9880, stack(0x0000000021930000,0x0000000021a30000)]
+  0x0000000019d6f800 JavaThread "Thread-36" [_thread_blocked, id=808, stack(0x0000000021830000,0x0000000021930000)]
+  0x0000000019d75000 JavaThread "Thread-35" [_thread_blocked, id=9968, stack(0x0000000021730000,0x0000000021830000)]
+  0x0000000019d6d800 JavaThread "Thread-34" [_thread_blocked, id=1684, stack(0x0000000021630000,0x0000000021730000)]
+  0x0000000019d72000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_in_native, id=5032, stack(0x0000000021530000,0x0000000021630000)]
+  0x0000000019d71000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_in_native, id=416, stack(0x0000000021430000,0x0000000021530000)]
+  0x0000000019d6c800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_in_native, id=8860, stack(0x0000000021330000,0x0000000021430000)]
+  0x0000000019d73800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_in_native, id=8968, stack(0x0000000021230000,0x0000000021330000)]
+  0x0000000019d6c000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_in_native, id=10036, stack(0x0000000021130000,0x0000000021230000)]
+  0x00000000166bd800 JavaThread "Thread-30" [_thread_blocked, id=7776, stack(0x0000000021030000,0x0000000021130000)]
+  0x00000000166bf000 JavaThread "Thread-29" [_thread_blocked, id=8724, stack(0x0000000020f30000,0x0000000021030000)]
+  0x00000000166be000 JavaThread "Thread-28" [_thread_blocked, id=3028, stack(0x0000000020e30000,0x0000000020f30000)]
+  0x00000000166bc800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_in_native, id=8392, stack(0x0000000020d30000,0x0000000020e30000)]
+  0x00000000166bc000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_in_native, id=5248, stack(0x0000000020c30000,0x0000000020d30000)]
+  0x00000000166bb000 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_in_native, id=4944, stack(0x0000000020b30000,0x0000000020c30000)]
+  0x00000000166b9800 JavaThread "Run command 'C:\Users\Amgad\AppData\Local\Android\sdk\build-tools\21.1.2\aapt.exe'" [_thread_in_native, id=6668, stack(0x0000000020a30000,0x0000000020b30000)]
+  0x00000000166b9000 JavaThread "Thread-21" [_thread_blocked, id=8840, stack(0x0000000020930000,0x0000000020a30000)]
+  0x00000000166ba800 JavaThread "Thread-20" [_thread_blocked, id=8200, stack(0x0000000020830000,0x0000000020930000)]
+  0x00000000166b1800 JavaThread "Thread-19" [_thread_blocked, id=4324, stack(0x0000000020730000,0x0000000020830000)]
+  0x00000000166b5000 JavaThread "Thread-18" [_thread_blocked, id=10032, stack(0x0000000020630000,0x0000000020730000)]
+  0x00000000166b4800 JavaThread "Thread-17" [_thread_blocked, id=6104, stack(0x0000000020530000,0x0000000020630000)]
+  0x00000000166b8000 JavaThread "Thread-16" [_thread_blocked, id=3740, stack(0x0000000020430000,0x0000000020530000)]
+  0x00000000166b2000 JavaThread "Thread-15" [_thread_blocked, id=6952, stack(0x0000000020330000,0x0000000020430000)]
+  0x00000000166b0800 JavaThread "Thread-14" [_thread_blocked, id=6520, stack(0x0000000020230000,0x0000000020330000)]
+  0x00000000166b6800 JavaThread "Thread-13" [_thread_blocked, id=8400, stack(0x0000000020130000,0x0000000020230000)]
+  0x00000000166b7800 JavaThread "pool-3-thread-4" [_thread_blocked, id=4240, stack(0x000000001ff30000,0x0000000020030000)]
+  0x00000000166b3000 JavaThread "pool-3-thread-3" [_thread_blocked, id=2024, stack(0x000000001fe30000,0x000000001ff30000)]
+  0x00000000166b0000 JavaThread "pool-3-thread-2" [_thread_blocked, id=4392, stack(0x000000001fd30000,0x000000001fe30000)]
+  0x00000000166b6000 JavaThread "pool-3-thread-1" [_thread_blocked, id=6996, stack(0x000000001fc30000,0x000000001fd30000)]
+  0x0000000018417800 JavaThread "Stdin handler" [_thread_blocked, id=5816, stack(0x000000001fb30000,0x000000001fc30000)]
+  0x0000000018417000 JavaThread "Asynchronous log dispatcher for org.gradle.launcher.daemon.server.DefaultDaemonConnection@13c8d7c1" [_thread_blocked, id=180, stack(0x000000001f510000,0x000000001f610000)]
+  0x0000000018416000 JavaThread "Cancel handler" [_thread_blocked, id=4984, stack(0x000000001cd90000,0x000000001ce90000)]
+  0x000000001841c000 JavaThread "Handler for socket connection from /127.0.0.1:7197 to /127.0.0.1:7213" [_thread_in_native, id=628, stack(0x000000001ba20000,0x000000001bb20000)]
+  0x000000001841a000 JavaThread "File lock request listener" [_thread_in_native, id=6048, stack(0x000000001a750000,0x000000001a850000)]
+  0x0000000017954000 JavaThread "Daemon worker" [_thread_blocked, id=9620, stack(0x0000000018e80000,0x0000000018f80000)]
+  0x00000000178ea800 JavaThread "Daemon" [_thread_blocked, id=4404, stack(0x0000000018b80000,0x0000000018c80000)]
+  0x000000001781c000 JavaThread "Incoming local TCP Connector on port 7197" [_thread_in_native, id=6052, stack(0x00000000187a0000,0x00000000188a0000)]
+  0x0000000017677000 JavaThread "pool-1-thread-1" [_thread_blocked, id=2212, stack(0x0000000017370000,0x0000000017470000)]
+  0x00000000165a0800 JavaThread "Service Thread" daemon [_thread_blocked, id=396, stack(0x0000000016970000,0x0000000016a70000)]
+  0x0000000014d27000 JavaThread "C1 CompilerThread2" daemon [_thread_blocked, id=4132, stack(0x0000000016470000,0x0000000016570000)]
+  0x0000000014d22800 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=3908, stack(0x0000000016370000,0x0000000016470000)]
+  0x0000000014d20000 JavaThread "C2 CompilerThread0" daemon [_thread_in_native, id=9220, stack(0x0000000016270000,0x0000000016370000)]
+  0x0000000014d1e800 JavaThread "Attach Listener" daemon [_thread_blocked, id=2340, stack(0x0000000016170000,0x0000000016270000)]
+  0x0000000014d1b800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=10120, stack(0x0000000016070000,0x0000000016170000)]
+  0x0000000014d0a800 JavaThread "Finalizer" daemon [_thread_blocked, id=6808, stack(0x0000000015f70000,0x0000000016070000)]
+  0x0000000014ce9000 JavaThread "Reference Handler" daemon [_thread_blocked, id=7408, stack(0x0000000015e70000,0x0000000015f70000)]
+  0x000000000244e000 JavaThread "main" [_thread_blocked, id=2016, stack(0x0000000002450000,0x0000000002550000)]
+
+Other Threads:
+=>0x0000000014ce6800 VMThread [stack: 0x0000000015d70000,0x0000000015e70000] [id=2384]
+  0x00000000165b3800 WatcherThread [stack: 0x0000000016a70000,0x0000000016b70000] [id=3280]
+
+VM state:at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x000000000244d500] Threads_lock - owner thread: 0x0000000014ce6800
+
+Heap:
+ PSYoungGen      total 173056K, used 65451K [0x00000000eab00000, 0x00000000f8900000, 0x0000000100000000)
+  eden space 152064K, 35% used [0x00000000eab00000,0x00000000edfdc130,0x00000000f3f80000)
+  from space 20992K, 53% used [0x00000000f3f80000,0x00000000f4a8eea0,0x00000000f5400000)
+  to   space 20480K, 0% used [0x00000000f7500000,0x00000000f7500000,0x00000000f8900000)
+ ParOldGen       total 82432K, used 41874K [0x00000000c0000000, 0x00000000c5080000, 0x00000000eab00000)
+  object space 82432K, 50% used [0x00000000c0000000,0x00000000c28e4898,0x00000000c5080000)
+ Metaspace       used 56420K, capacity 58562K, committed 58624K, reserved 1099776K
+  class space    used 7756K, capacity 8183K, committed 8192K, reserved 1048576K
+
+Card table byte_map: [0x0000000011a10000,0x0000000011c20000] byte_map_base: 0x0000000011410000
+
+Marking Bits: (ParMarkBitMap*) 0x000000005f92a6d0
+ Begin Bits: [0x0000000012180000, 0x0000000013180000)
+ End Bits:   [0x0000000013180000, 0x0000000014180000)
+
+Polling page: 0x0000000000b10000
+
+CodeCache: size=245760Kb used=23663Kb max_used=24912Kb free=222096Kb
+ bounds [0x0000000002650000, 0x0000000003ec0000, 0x0000000011650000]
+ total_blobs=8037 nmethods=7320 adapters=628
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 20.554 Thread 0x0000000014d27000 8589       3       java.lang.ProcessEnvironment$CheckedEntrySet::iterator (9 bytes)
+Event: 20.555 Thread 0x0000000014d27000 nmethod 8589 0x0000000002794d10 code [0x0000000002794e80, 0x0000000002795208]
+Event: 20.555 Thread 0x0000000014d27000 8590       3       java.lang.ProcessEnvironment$CheckedEntrySet$1::<init> (26 bytes)
+Event: 20.555 Thread 0x0000000014d27000 nmethod 8590 0x0000000003193f50 code [0x00000000031940c0, 0x0000000003194388]
+Event: 20.555 Thread 0x0000000014d27000 8591       1       com.android.ide.common.blame.SourceFile::getSourceFile (5 bytes)
+Event: 20.555 Thread 0x0000000014d27000 nmethod 8591 0x0000000003b83790 code [0x0000000003b838e0, 0x0000000003b839f0]
+Event: 20.558 Thread 0x0000000014d27000 8592       3       com.google.common.util.concurrent.MoreExecutors$DirectExecutor::execute (7 bytes)
+Event: 20.558 Thread 0x0000000014d27000 nmethod 8592 0x0000000002cdcc10 code [0x0000000002cdcd80, 0x0000000002cdcfa8]
+Event: 20.564 Thread 0x0000000014d27000 8593       3       java.util.concurrent.ThreadPoolExecutor$Worker::lock (6 bytes)
+Event: 20.565 Thread 0x0000000014d22800 8594       4       java.util.HashMap::clear (50 bytes)
+
+GC Heap History (10 events):
+Event: 10.074 GC heap before
+{Heap before GC invocations=14 (full 2):
+ PSYoungGen      total 131072K, used 131042K [0x00000000eab00000, 0x00000000f5700000, 0x0000000100000000)
+  eden space 119808K, 100% used [0x00000000eab00000,0x00000000f2000000,0x00000000f2000000)
+  from space 11264K, 99% used [0x00000000f2000000,0x00000000f2af8a98,0x00000000f2b00000)
+  to   space 14336K, 0% used [0x00000000f4900000,0x00000000f4900000,0x00000000f5700000)
+ ParOldGen       total 82432K, used 20523K [0x00000000c0000000, 0x00000000c5080000, 0x00000000eab00000)
+  object space 82432K, 24% used [0x00000000c0000000,0x00000000c140af08,0x00000000c5080000)
+ Metaspace       used 51040K, capacity 52774K, committed 52864K, reserved 1095680K
+  class space    used 7158K, capacity 7536K, committed 7552K, reserved 1048576K
+Event: 10.103 GC heap after
+Heap after GC invocations=14 (full 2):
+ PSYoungGen      total 155648K, used 14322K [0x00000000eab00000, 0x00000000f6680000, 0x0000000100000000)
+  eden space 141312K, 0% used [0x00000000eab00000,0x00000000eab00000,0x00000000f3500000)
+  from space 14336K, 99% used [0x00000000f4900000,0x00000000f56fcaa8,0x00000000f5700000)
+  to   space 20480K, 0% used [0x00000000f3500000,0x00000000f3500000,0x00000000f4900000)
+ ParOldGen       total 82432K, used 32901K [0x00000000c0000000, 0x00000000c5080000, 0x00000000eab00000)
+  object space 82432K, 39% used [0x00000000c0000000,0x00000000c20214f8,0x00000000c5080000)
+ Metaspace       used 51040K, capacity 52774K, committed 52864K, reserved 1095680K
+  class space    used 7158K, capacity 7536K, committed 7552K, reserved 1048576K
+}
+Event: 10.287 GC heap before
+{Heap before GC invocations=15 (full 2):
+ PSYoungGen      total 155648K, used 23137K [0x00000000eab00000, 0x00000000f6680000, 0x0000000100000000)
+  eden space 141312K, 6% used [0x00000000eab00000,0x00000000eb39bc38,0x00000000f3500000)
+  from space 14336K, 99% used [0x00000000f4900000,0x00000000f56fcaa8,0x00000000f5700000)
+  to   space 20480K, 0% used [0x00000000f3500000,0x00000000f3500000,0x00000000f4900000)
+ ParOldGen       total 82432K, used 32901K [0x00000000c0000000, 0x00000000c5080000, 0x00000000eab00000)
+  object space 82432K, 39% used [0x00000000c0000000,0x00000000c20214f8,0x00000000c5080000)
+ Metaspace       used 51796K, capacity 53702K, committed 53888K, reserved 1095680K
+  class space    used 7267K, capacity 7701K, committed 7808K, reserved 1048576K
+Event: 10.320 GC heap after
+Heap after GC invocations=15 (full 2):
+ PSYoungGen      total 161792K, used 15600K [0x00000000eab00000, 0x00000000f6980000, 0x0000000100000000)
+  eden space 141312K, 0% used [0x00000000eab00000,0x00000000eab00000,0x00000000f3500000)
+  from space 20480K, 76% used [0x00000000f3500000,0x00000000f443c020,0x00000000f4900000)
+  to   space 22016K, 0% used [0x00000000f5400000,0x00000000f5400000,0x00000000f6980000)
+ ParOldGen       total 82432K, used 32909K [0x00000000c0000000, 0x00000000c5080000, 0x00000000eab00000)
+  object space 82432K, 39% used [0x00000000c0000000,0x00000000c20234f8,0x00000000c5080000)
+ Metaspace       used 51796K, capacity 53702K, committed 53888K, reserved 1095680K
+  class space    used 7267K, capacity 7701K, committed 7808K, reserved 1048576K
+}
+Event: 10.320 GC heap before
+{Heap before GC invocations=16 (full 3):
+ PSYoungGen      total 161792K, used 15600K [0x00000000eab00000, 0x00000000f6980000, 0x0000000100000000)
+  eden space 141312K, 0% used [0x00000000eab00000,0x00000000eab00000,0x00000000f3500000)
+  from space 20480K, 76% used [0x00000000f3500000,0x00000000f443c020,0x00000000f4900000)
+  to   space 22016K, 0% used [0x00000000f5400000,0x00000000f5400000,0x00000000f6980000)
+ ParOldGen       total 82432K, used 32909K [0x00000000c0000000, 0x00000000c5080000, 0x00000000eab00000)
+  object space 82432K, 39% used [0x00000000c0000000,0x00000000c20234f8,0x00000000c5080000)
+ Metaspace       used 51796K, capacity 53702K, committed 53888K, reserved 1095680K
+  class space    used 7267K, capacity 7701K, committed 7808K, reserved 1048576K
+Event: 10.662 GC heap after
+Heap after GC invocations=16 (full 3):
+ PSYoungGen      total 161792K, used 0K [0x00000000eab00000, 0x00000000f6980000, 0x0000000100000000)
+  eden space 141312K, 0% used [0x00000000eab00000,0x00000000eab00000,0x00000000f3500000)
+  from space 20480K, 0% used [0x00000000f3500000,0x00000000f3500000,0x00000000f4900000)
+  to   space 22016K, 0% used [0x00000000f5400000,0x00000000f5400000,0x00000000f6980000)
+ ParOldGen       total 82432K, used 41858K [0x00000000c0000000, 0x00000000c5080000, 0x00000000eab00000)
+  object space 82432K, 50% used [0x00000000c0000000,0x00000000c28e0898,0x00000000c5080000)
+ Metaspace       used 51796K, capacity 53702K, committed 53888K, reserved 1095680K
+  class space    used 7267K, capacity 7701K, committed 7808K, reserved 1048576K
+}
+Event: 19.601 GC heap before
+{Heap before GC invocations=17 (full 3):
+ PSYoungGen      total 161792K, used 141312K [0x00000000eab00000, 0x00000000f6980000, 0x0000000100000000)
+  eden space 141312K, 100% used [0x00000000eab00000,0x00000000f3500000,0x00000000f3500000)
+  from space 20480K, 0% used [0x00000000f3500000,0x00000000f3500000,0x00000000f4900000)
+  to   space 22016K, 0% used [0x00000000f5400000,0x00000000f5400000,0x00000000f6980000)
+ ParOldGen       total 82432K, used 41858K [0x00000000c0000000, 0x00000000c5080000, 0x00000000eab00000)
+  object space 82432K, 50% used [0x00000000c0000000,0x00000000c28e0898,0x00000000c5080000)
+ Metaspace       used 55259K, capacity 57368K, committed 57600K, reserved 1099776K
+  class space    used 7634K, capacity 8098K, committed 8192K, reserved 1048576K
+Event: 19.611 GC heap after
+Heap after GC invocations=17 (full 3):
+ PSYoungGen      total 174080K, used 6883K [0x00000000eab00000, 0x00000000f7c00000, 0x0000000100000000)
+  eden space 152064K, 0% used [0x00000000eab00000,0x00000000eab00000,0x00000000f3f80000)
+  from space 22016K, 31% used [0x00000000f5400000,0x00000000f5ab8c68,0x00000000f6980000)
+  to   space 20992K, 0% used [0x00000000f3f80000,0x00000000f3f80000,0x00000000f5400000)
+ ParOldGen       total 82432K, used 41866K [0x00000000c0000000, 0x00000000c5080000, 0x00000000eab00000)
+  object space 82432K, 50% used [0x00000000c0000000,0x00000000c28e2898,0x00000000c5080000)
+ Metaspace       used 55259K, capacity 57368K, committed 57600K, reserved 1099776K
+  class space    used 7634K, capacity 8098K, committed 8192K, reserved 1048576K
+}
+Event: 20.295 GC heap before
+{Heap before GC invocations=18 (full 3):
+ PSYoungGen      total 174080K, used 158947K [0x00000000eab00000, 0x00000000f7c00000, 0x0000000100000000)
+  eden space 152064K, 100% used [0x00000000eab00000,0x00000000f3f80000,0x00000000f3f80000)
+  from space 22016K, 31% used [0x00000000f5400000,0x00000000f5ab8c68,0x00000000f6980000)
+  to   space 20992K, 0% used [0x00000000f3f80000,0x00000000f3f80000,0x00000000f5400000)
+ ParOldGen       total 82432K, used 41866K [0x00000000c0000000, 0x00000000c5080000, 0x00000000eab00000)
+  object space 82432K, 50% used [0x00000000c0000000,0x00000000c28e2898,0x00000000c5080000)
+ Metaspace       used 56384K, capacity 58494K, committed 58624K, reserved 1099776K
+  class space    used 7756K, capacity 8183K, committed 8192K, reserved 1048576K
+Event: 20.308 GC heap after
+Heap after GC invocations=18 (full 3):
+ PSYoungGen      total 173056K, used 11323K [0x00000000eab00000, 0x00000000f8900000, 0x0000000100000000)
+  eden space 152064K, 0% used [0x00000000eab00000,0x00000000eab00000,0x00000000f3f80000)
+  from space 20992K, 53% used [0x00000000f3f80000,0x00000000f4a8eea0,0x00000000f5400000)
+  to   space 20480K, 0% used [0x00000000f7500000,0x00000000f7500000,0x00000000f8900000)
+ ParOldGen       total 82432K, used 41874K [0x00000000c0000000, 0x00000000c5080000, 0x00000000eab00000)
+  object space 82432K, 50% used [0x00000000c0000000,0x00000000c28e4898,0x00000000c5080000)
+ Metaspace       used 56384K, capacity 58494K, committed 58624K, reserved 1099776K
+  class space    used 7756K, capacity 8183K, committed 8192K, reserved 1048576K
+}
+
+Deoptimization events (10 events):
+Event: 19.663 Thread 0x0000000017954000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000000000285c074 method=com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.checkBeforeLoad(Lcom/sun/xml/internal/stream/Entity$ScannedEntity;II)I @ 18
+Event: 19.727 Thread 0x0000000017954000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000002b1f608 method=sun.nio.cs.UTF_8$Decoder.decode([BII[C)I @ 30
+Event: 19.727 Thread 0x0000000017954000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000003c684f8 method=java.lang.StringCoding.safeTrim([CILjava/nio/charset/Charset;Z)[C @ 3
+Event: 19.730 Thread 0x0000000017954000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000003c71318 method=java.lang.StringCoding.safeTrim([CILjava/nio/charset/Charset;Z)[C @ 3
+Event: 19.733 Thread 0x0000000017954000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000003c5be78 method=java.lang.StringCoding.safeTrim([CILjava/nio/charset/Charset;Z)[C @ 3
+Event: 19.867 Thread 0x0000000017954000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000003e0f930 method=com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.scanQName(Lcom/sun/org/apache/xerces/internal/xni/QName;Lcom/sun/org/apache/xerces/internal/impl/XMLScanner$NameType;:ôB*î3@
+Event: 19.930 Thread 0x0000000017954000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000003e50280 method=com.android.utils.PositionXmlParser$DomBuilder.findOpeningTag(Lcom/android/utils/PositionXmlParser$Position;)Lcom/android/utils/PositionXmlParser$Position; @ 81
+Event: 19.939 Thread 0x0000000017954000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00000000033d67c4 method=java.util.regex.Pattern.append(II)V @ 6
+Event: 20.347 Thread 0x00000000166b3000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000002aeb634 method=java.util.concurrent.ConcurrentHashMap.putVal(Ljava/lang/Object;Ljava/lang/Object;Z)Ljava/lang/Object; @ 113
+Event: 20.527 Thread 0x0000000017954000 Uncommon trap: reason=null_check action=make_not_entrant pc=0x00000000031e882c method=com.android.ide.common.res2.NodeUtils.processSingleNodeNamespace(Lorg/w3c/dom/Node;Lorg/w3c/dom/Document;)Z @ 8
+
+Internal exceptions (10 events):
+Event: 15.132 Thread 0x0000000017954000 Exception <a 'sun/nio/fs/WindowsException'> (0x00000000efa9d5d0) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u101\7261\hotspot\src\share\vm\prims\jni.cpp, line 709]
+Event: 15.132 Thread 0x0000000017954000 Exception <a 'sun/nio/fs/WindowsException'> (0x00000000efa9e128) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u101\7261\hotspot\src\share\vm\prims\jni.cpp, line 709]
+Event: 15.763 Thread 0x0000000017954000 Exception <a 'java/lang/NoSuchMethodError': <clinit>> (0x00000000f06597d8) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u101\7261\hotspot\src\share\vm\prims\jni.cpp, line 1613]
+Event: 15.764 Thread 0x0000000017954000 Exception <a 'java/lang/NoSuchMethodError': <clinit>> (0x00000000f0666788) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u101\7261\hotspot\src\share\vm\prims\jni.cpp, line 1613]
+Event: 15.776 Thread 0x0000000017954000 Exception <a 'java/lang/NoSuchMethodError': <clinit>> (0x00000000f0763fd0) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u101\7261\hotspot\src\share\vm\prims\jni.cpp, line 1613]
+Event: 15.777 Thread 0x0000000017954000 Exception <a 'java/lang/NoSuchMethodError': <clinit>> (0x00000000f077c7e0) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u101\7261\hotspot\src\share\vm\prims\jni.cpp, line 1613]
+Event: 15.777 Thread 0x0000000017954000 Exception <a 'java/lang/NoSuchMethodError': <clinit>> (0x00000000f077dcf8) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u101\7261\hotspot\src\share\vm\prims\jni.cpp, line 1613]
+Event: 18.212 Thread 0x0000000017954000 Exception <a 'java/lang/ClassNotFoundException': com/android/build/gradle/internal/LibraryCache$1BeanInfo> (0x00000000f1667f70) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u101\7261\hotspot\src\share\vm\classfile\systemDictionary.cpp, linŽoW¤ç62@
+Event: 18.214 Thread 0x0000000017954000 Exception <a 'java/lang/ClassNotFoundException': com/android/build/gradle/internal/LibraryCache$1Customizer> (0x00000000f1678808) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u101\7261\hotspot\src\share\vm\classfile\systemDictionary.cpp, lQl1Wî†4@
+Event: 20.527 Thread 0x0000000017954000 Implicit null exception at 0x00000000031e86d7 to 0x00000000031e881b
+
+Events (10 events):
+Event: 20.560 Executing VM operation: RevokeBias
+Event: 20.564 Executing VM operation: RevokeBias done
+Event: 20.564 Thread 0x000000001d93b800 Thread exited: 0x000000001d93b800
+Event: 20.564 Executing VM operation: RevokeBias
+Event: 20.565 Executing VM operation: RevokeBias done
+Event: 20.565 Thread 0x000000001d945000 Thread exited: 0x000000001d945000
+Event: 20.565 Executing VM operation: RevokeBias
+Event: 20.566 Executing VM operation: RevokeBias done
+Event: 20.566 Thread 0x000000001d944800 Thread exited: 0x000000001d944800
+Event: 20.566 Executing VM operation: BulkRevokeBias
+
+
+Dynamic libraries:
+0x00007ff7cee00000 - 0x00007ff7cee37000 	C:\Program Files\Java\jdk1.8.0_101\bin\java.exe
+0x00007ffaec550000 - 0x00007ffaec711000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ffaeb380000 - 0x00007ffaeb42d000 	C:\Windows\system32\KERNEL32.DLL
+0x00007ffae96b0000 - 0x00007ffae9898000 	C:\Windows\system32\KERNELBASE.dll
+0x00007ffaebe20000 - 0x00007ffaebec7000 	C:\Windows\system32\ADVAPI32.dll
+0x00007ffaeaec0000 - 0x00007ffaeaf5d000 	C:\Windows\system32\msvcrt.dll
+0x00007ffaeb430000 - 0x00007ffaeb48b000 	C:\Windows\system32\sechost.dll
+0x00007ffaeb500000 - 0x00007ffaeb61c000 	C:\Windows\system32\RPCRT4.dll
+0x00007ffaeb220000 - 0x00007ffaeb376000 	C:\Windows\system32\USER32.dll
+0x00007ffaec1d0000 - 0x00007ffaec356000 	C:\Windows\system32\GDI32.dll
+0x00007ffad3ca0000 - 0x00007ffad3f14000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.10586.494_none_a2d8b04ea53e3145\COMCTL32.dll
+0x00007ffaebee0000 - 0x00007ffaec15d000 	C:\Windows\system32\combase.dll
+0x00007ffae8dd0000 - 0x00007ffae8e3a000 	C:\Windows\system32\bcryptPrimitives.dll
+0x00007ffaec4b0000 - 0x00007ffaec4eb000 	C:\Windows\system32\IMM32.DLL
+0x00000000604d0000 - 0x00000000605a2000 	C:\Program Files\Java\jdk1.8.0_101\jre\bin\msvcr100.dll
+0x000000005f110000 - 0x000000005f9aa000 	C:\Program Files\Java\jdk1.8.0_101\jre\bin\server\jvm.dll
+0x00007ffaebed0000 - 0x00007ffaebed8000 	C:\Windows\system32\PSAPI.DLL
+0x00007ffad6310000 - 0x00007ffad6319000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007ffaeb490000 - 0x00007ffaeb4fb000 	C:\Windows\system32\WS2_32.dll
+0x00007ffae7270000 - 0x00007ffae7293000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ffad90a0000 - 0x00007ffad90aa000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ffae7240000 - 0x00007ffae726c000 	C:\Windows\SYSTEM32\WINMMBASE.dll
+0x00007ffae8f00000 - 0x00007ffae8f43000 	C:\Windows\system32\cfgmgr32.dll
+0x00000000604c0000 - 0x00000000604cf000 	C:\Program Files\Java\jdk1.8.0_101\jre\bin\verify.dll
+0x0000000060490000 - 0x00000000604b9000 	C:\Program Files\Java\jdk1.8.0_101\jre\bin\java.dll
+0x0000000060470000 - 0x0000000060486000 	C:\Program Files\Java\jdk1.8.0_101\jre\bin\zip.dll
+0x00007ffae9950000 - 0x00007ffaeaeac000 	C:\Windows\system32\SHELL32.dll
+0x00007ffae8f50000 - 0x00007ffae9595000 	C:\Windows\system32\windows.storage.dll
+0x00007ffaeb630000 - 0x00007ffaeb682000 	C:\Windows\system32\shlwapi.dll
+0x00007ffae8be0000 - 0x00007ffae8bef000 	C:\Windows\system32\kernel.appcore.dll
+0x00007ffae8e40000 - 0x00007ffae8ef5000 	C:\Windows\system32\shcore.dll
+0x00007ffae8b90000 - 0x00007ffae8bdb000 	C:\Windows\system32\powrprof.dll
+0x00007ffae8b70000 - 0x00007ffae8b84000 	C:\Windows\system32\profapi.dll
+0x0000000060450000 - 0x000000006046a000 	C:\Program Files\Java\jdk1.8.0_101\jre\bin\net.dll
+0x00007ffae8440000 - 0x00007ffae849c000 	C:\Windows\system32\mswsock.dll
+0x0000000060430000 - 0x0000000060441000 	C:\Program Files\Java\jdk1.8.0_101\jre\bin\nio.dll
+0x00007ffae32f0000 - 0x00007ffae3302000 	C:\Users\Amgad\.gradle\native\19\windows-amd64\native-platform.dll
+0x00007ffae84f0000 - 0x00007ffae8507000 	C:\Windows\SYSTEM32\CRYPTSP.dll
+0x00007ffae8180000 - 0x00007ffae81b4000 	C:\Windows\system32\rsaenh.dll
+0x00007ffae8aa0000 - 0x00007ffae8ac9000 	C:\Windows\SYSTEM32\bcrypt.dll
+0x00007ffae82d0000 - 0x00007ffae82ef000 	C:\Windows\SYSTEM32\USERENV.dll
+0x00007ffae8a90000 - 0x00007ffae8a9b000 	C:\Windows\SYSTEM32\CRYPTBASE.dll
+0x00007ffae5a90000 - 0x00007ffae5ac8000 	C:\Windows\SYSTEM32\IPHLPAPI.DLL
+0x00007ffaeb620000 - 0x00007ffaeb628000 	C:\Windows\system32\NSI.dll
+0x00007ffae1c00000 - 0x00007ffae1c16000 	C:\Windows\SYSTEM32\dhcpcsvc6.DLL
+0x00007ffae1be0000 - 0x00007ffae1bfa000 	C:\Windows\SYSTEM32\dhcpcsvc.DLL
+0x0000000060420000 - 0x000000006042d000 	C:\Program Files\Java\jdk1.8.0_101\jre\bin\management.dll
+
+VM Arguments:
+jvm_args: -XX:MaxPermSize=256m -XX:+HeapDumpOnOutOfMemoryError -Xmx1024m -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant 
+java_command: org.gradle.launcher.daemon.bootstrap.GradleDaemon 2.14.1
+java_class_path (initial): C:\Program Files\Android\Android Studio\gradle\gradle-2.14.1\lib\gradle-launcher-2.14.1.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Calibre2\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files\Git\cmd;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\
+USERNAME=Amgad
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 78 Stepping 3, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 10586 (10.0.10586.0)
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 78 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 6148096k(559568k free), swap 8196096k(3800k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.101-b13) for windows-amd64 JRE (1.8.0_101-b13), built on Jun 22 2016 01:21:29 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Tue Nov 22 09:51:06 2016
+elapsed time: 20 seconds (0d 0h 0m 20s)
+

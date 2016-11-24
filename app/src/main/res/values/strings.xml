@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Hayy</string>
+    <string name="place_info_activity">PlaceInfoActivity</string>
+
+    <!--    menu -->
+    <string name="action_search">Search a Place</string>
+
+    <!--    activity_main        -->
+    <string name="activity_main_try_search_for">Try \"باب زويلة\"</string>
+
+    <!-- place_details -->
+    <string name="the_story">القصة</string>
+    <string name="Commissioner">المُنشِئ</string>
+    <string name="epoch">الحقبة</string>
+    <string name="story_details">قريباً...</string>
+    <string name="ha2">هجرياً</string>
+    <string name="meem">ميلادياً</string>
+    <string name="from"> من </string>
+    <string name="to"> إلى </string>
+    <string name="date_hijri_from">(غير معلوم)</string>
+    <string name="date_hijri_to">(غير معلوم)</string>
+    <string name="date_gregorian_from">(غير معلوم)</string>
+    <string name="date_gregorian_to">(غير معلوم)</string>
+    <string name="Commissioner_name">قريباً...</string>
+
+    Commissioner_name
+
+    <!--    Sandbox              -->
+    <string name="action_settings">Settings</string>
+
+
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="amgad.com.hayy2" >
+
+    <!-- for Google Maps V2 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <!-- for Google Maps V2 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <permission
+        android:name="com.VertexVerveInc.GPSLocator.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic6"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name="amgad.com.hayy2.MainActivity"
+            android:theme="@style/NoActionBar"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data android:name="android.app.default_searchable" android:value=".SearchableActivity" />
+        </activity>
+
+        <activity
+            android:name="amgad.com.hayy2.PlaceInfoActivity"
+            android:label="@string/place_info_activity" >
+        </activity>
+
+        <!-- for Google Maps V2, letting System knows that we're using Play Services -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- for Google Maps V2, the API Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDZJ7roEtaRaAFrrueLlkbb3tRf9y5Yp04"/>
+    </application>
+
+</manifest>
